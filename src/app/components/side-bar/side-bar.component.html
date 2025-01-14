@@ -1,0 +1,32 @@
+<mat-sidenav-container class="sidenav-container" autosize>
+  <mat-sidenav
+    #sidenav
+    mode="side"
+    class="sidenav"
+    [(opened)]="isOpened"
+  >
+    <div class="sidebar-content">
+      <h3>Sidebar Content</h3>
+      <p>This is the content of the sidebar.</p>
+
+      <ul class="nav-side">
+        <li class="nav-side-item">About me</li>
+        <li class="nav-side-item">My portfolio</li>
+        <li class="nav-side-item">My service</li>
+        <li class="nav-side-item">Booking</li>
+      </ul>
+
+      <button mat-button (click)="toggleSidebar()">Close Sidebar</button>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="main-content">
+      <mat-icon class="arrow-icon" (click)="toggleSidebar()">arrow_forward_ios</mat-icon>
+      <!-- <button mat-raised-button (click)="toggleSidebar()">
+        Toggle Sidebar
+      </button> -->
+      <router-outlet/>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
