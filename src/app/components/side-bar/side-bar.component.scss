@@ -1,40 +1,26 @@
 .sidenav-container {
   height: 100vh;
   display: flex;
+  background-color: var(--background);
 }
 
 .sidenav {
   width: 250px;
-  background-color: #f4f4f4;
+  background-color: var(--secondary);
   padding: 16px;
 }
 
 .main-content {
   padding: 16px;
+  background-color: var(--background);
 }
 
 .mat-drawer-content{
   width: 100%;
 }
 
-// ul.nav-side{
-//   list-style-type: none;
-//   padding: 0;
-//   margin: 0;
-// }
-
-// li.nav-side-item{
-//   padding: 8px;
-// }
-
-// li.nav-side-item:hover{
-//   background-color: #cccccc;
-//   font-weight: bold;
-//   cursor: pointer;
-// }
-
 .arrow-icon:hover{
-  color: #cccccc;
+  color: var(--secondary);
   cursor: pointer;
 }
 ul {
@@ -51,7 +37,7 @@ ul {
       margin: 20px 0;
       padding: 10px 20px;
       text-decoration: none;
-      color: #262626;
+      color: var(--text);
       transition: .5s;
       z-index: 1;
       &:before {
@@ -61,8 +47,8 @@ ul {
         left: 0;
         width: 100%;
         height: 100%;
-        border-top: 2px solid #262626;
-        border-bottom: 2px solid #262626;
+        border-top: 2px solid var(--text);
+        border-bottom: 2px solid var(--text);
         transform: scaleY(2);
         opacity: 0;
         transition: .3s;
@@ -74,7 +60,7 @@ ul {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #262626;
+        background-color: var(--text);
         transform: scale(0);
         opacity: 0;
         transition: .3s;
@@ -93,7 +79,8 @@ ul {
       }
 
       &.active-link {
-        background-color: #ddd;
+        background-color: var(--text);
+        color: #fff;
       }
     }
   }

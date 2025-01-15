@@ -3,6 +3,13 @@
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 @import "bootstrap/dist/css/bootstrap.css";
 
+:root {
+  --background: #f9faf5;
+  --text: #3b3a30;
+  --secondary: #b2c2bf;
+  --third: #c0ded9;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -12,7 +19,9 @@ h1 {
   font-family: "Playwrite VN", serif;
 }
 
-body {
+html, body {
   font-family: "Lexend Deca", serif;
   font-weight: 300;
+  background-color: var(--background);
+  color: var(--text);
 }
