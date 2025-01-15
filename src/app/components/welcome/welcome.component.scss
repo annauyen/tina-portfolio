@@ -1,5 +1,53 @@
-.booking-buttons{
+.booking-buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
+.blur-container {
+  position: relative;
+  overflow: hidden;
+  background: url("/assets/img/welcome.jpg") center/cover no-repeat !important;
+  height: 100vh;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  text-align: left;
+
+  p {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 100;
+  }
+
+  h1 {
+    font-family: "Mrs Saint Delafield", serif;
+    font-size: 80pt;
+    letter-spacing: 6px;
+  }
+}
+
+.buttons {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  width: 40%;
+
+  .booking-long-button {
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: 100;
+    width: 100%;
+  }
+}

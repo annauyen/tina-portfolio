@@ -1,7 +1,29 @@
-<div class="row">
-    <button mat-stroked-button>Contact for booking</button>
-    <div class="booking-buttons">
-        <button mat-raised-button class="booking-button">My portfolio</button>
-        <button mat-raised-button class="booking-button">My service</button>
+<div class="row blur-container">
+  <div class="content">
+    <div class="welcome-text">
+      <p>because every moments worth treasure</p>
+      <h1>Tina's photo</h1>
     </div>
+    <div class="buttons">
+      <button
+        mat-stroked-button
+        class="booking-long-button"
+        routerLink="/booking"
+      >
+        Contact for booking
+      </button>
+      <div class="booking-buttons">
+        <button
+          mat-raised-button
+          class="booking-button"
+          routerLink="/portfolio"
+        >
+          My portfolio
+        </button>
+        <button mat-raised-button class="booking-button" routerLink="/service">
+          My service
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
