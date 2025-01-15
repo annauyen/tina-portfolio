@@ -17,25 +17,89 @@
   width: 100%;
 }
 
-ul.nav-side{
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+// ul.nav-side{
+//   list-style-type: none;
+//   padding: 0;
+//   margin: 0;
+// }
 
-li.nav-side-item{
-  padding: 8px;
-}
+// li.nav-side-item{
+//   padding: 8px;
+// }
 
-li.nav-side-item:hover{
-  background-color: #cccccc;
-  font-weight: bold;
-  cursor: pointer;
-}
+// li.nav-side-item:hover{
+//   background-color: #cccccc;
+//   font-weight: bold;
+//   cursor: pointer;
+// }
 
 .arrow-icon:hover{
   color: #cccccc;
   cursor: pointer;
 }
+ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+    a {
+      position: relative;
+      display: block;
+      text-transform: uppercase;
+      margin: 20px 0;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #262626;
+      transition: .5s;
+      z-index: 1;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top: 2px solid #262626;
+        border-bottom: 2px solid #262626;
+        transform: scaleY(2);
+        opacity: 0;
+        transition: .3s;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #262626;
+        transform: scale(0);
+        opacity: 0;
+        transition: .3s;
+        z-index: -1;
+      }
+      &:hover {
+        color: #fff;
+        &:before {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+        &:after {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+      }
 
+      &.active-link {
+        background-color: #ddd;
+      }
+    }
+  }
+}
 
+.name-tag {
+  font-family:  "Meow Script", serif;
+  font-size: 28pt;
+}

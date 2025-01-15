@@ -1,32 +1,27 @@
 <mat-sidenav-container class="sidenav-container" autosize>
-  <mat-sidenav
-    #sidenav
-    mode="side"
-    class="sidenav"
-    [(opened)]="isOpened"
-  >
-    <div class="sidebar-content">
-      <h3>Sidebar Content</h3>
-      <p>This is the content of the sidebar.</p>
+    <mat-sidenav #sidenav mode="side" class="sidenav" [(opened)]="isOpened">
+        <div class="sidebar-content">
+            <button mat-button (click)="toggleSidebar()"><mat-icon>close</mat-icon></button>
+            <h3 class="name-tag">
+                <a routerLink="/">Tina Huynh</a>
+            </h3>
+            <p>Welcome to my page!</p>
 
-      <ul class="nav-side">
-        <li class="nav-side-item">About me</li>
-        <li class="nav-side-item">My portfolio</li>
-        <li class="nav-side-item">My service</li>
-        <li class="nav-side-item">Booking</li>
-      </ul>
+            <ul class="nav-side">
+                <li class="nav-side-item"><a routerLink="/about" routerLinkActive="active-link">About me</a></li>
+                <li class="nav-side-item"><a routerLink="/portfolio" routerLinkActive="active-link">My porfolio</a></li>
+                <li class="nav-side-item"><a routerLink="/service" routerLinkActive="active-link">My service</a></li>
+                <li class="nav-side-item"><a routerLink="/booking" routerLinkActive="active-link">Booking</a></li>
+            </ul>
+        </div>
+    </mat-sidenav>
 
-      <button mat-button (click)="toggleSidebar()">Close Sidebar</button>
-    </div>
-  </mat-sidenav>
-
-  <mat-sidenav-content>
-    <div class="main-content">
-      <mat-icon class="arrow-icon" (click)="toggleSidebar()">arrow_forward_ios</mat-icon>
-      <!-- <button mat-raised-button (click)="toggleSidebar()">
-        Toggle Sidebar
-      </button> -->
-      <router-outlet/>
-    </div>
-  </mat-sidenav-content>
+    <mat-sidenav-content>
+        <div class="main-content">
+            <mat-icon class="arrow-icon" (click)="toggleSidebar()">arrow_forward_ios</mat-icon>
+            <div class="container-fluid">
+              <router-outlet />
+            </div>
+        </div>
+    </mat-sidenav-content>
 </mat-sidenav-container>
