@@ -7,6 +7,7 @@ import { MyServiceComponent } from './components/my-service/my-service.component
 import { PortraitComponent } from './components/portfolio/portrait/portrait.component';
 import { EventComponent } from './components/portfolio/event/event.component';
 import { CoupleComponent } from './components/portfolio/couple/couple.component';
+import { ClientFeedbackComponent } from './components/client-feedback/client-feedback.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/welcome', pathMatch: 'full' },
@@ -49,5 +50,10 @@ export const routes: Routes = [
     path: 'couple',
     component: CoupleComponent,
     data: { animation: 'Couple' },
+  },
+  {
+    path: 'feedback',
+    component: ClientFeedbackComponent,
+    data: { animation: 'Client' },
   },
 ];
