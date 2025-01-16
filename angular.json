@@ -38,7 +38,6 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/tina-portfolio/",
               "budgets": [
                 {
                   "type": "initial",
