@@ -6,11 +6,12 @@
 .blur-container {
   position: relative;
   overflow: hidden;
-  background: url("/assets/img/welcome.jpg") center/cover no-repeat !important;
+  background: url("https://annauyen.github.io/tina-portfolio/assets/img/welcome.jpg") center/cover no-repeat !important;
   height: 100vh;
   width: 100%;
+  z-index: 0;
+  background: none;
 }
-
 .content {
   position: relative;
   color: white;
