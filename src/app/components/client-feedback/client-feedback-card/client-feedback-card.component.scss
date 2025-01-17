@@ -1,11 +1,7 @@
-.client-feedback-card {
-  // max-width: 400px;
-  margin: 20px auto;
-  padding: 15px;
+table tr td {
+  padding: 8px;
 }
 
-.client-avatar img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+td.avatar {
+  width: 150px;
 }

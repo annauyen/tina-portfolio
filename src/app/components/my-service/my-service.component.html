@@ -1,3 +1,17 @@
 <h1>My service</h1>
 <br>
-<p>my-service works!</p>
+<div class="row">
+  <div class="col-sm-4">
+    <app-my-service-card [description]="text1" [img]="'assets/img/portrait/1.JPG'" [price]="'€250'" [service]="'Portrait'">
+    </app-my-service-card>
+  </div>
+  <div class="col-sm-4">
+    <app-my-service-card [description]="text1" [img]="'assets/img/couple/2.JPG'" [price]="'€300'" [service]="'Couple'">
+    </app-my-service-card>
+  </div>
+  <div class="col-sm-4">
+    <app-my-service-card [description]="text2" [img]="'assets/img/event/1.JPG'" [price]="'Please contact me for details'" [service]="'Event'">
+    </app-my-service-card>
+
+  </div>
+</div>

@@ -1,3 +1,38 @@
 <h1>Booking</h1>
 <br>
-<p>booking works!</p>
+<mat-card>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <h2>Contact me</h2>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" placeholder="Enter your name" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" placeholder="Enter your email" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Message</mat-label>
+      <textarea
+        matInput
+        formControlName="message"
+        placeholder="Enter your message"
+        rows="4"
+      ></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="!contactForm.valid">
+      Send
+    </button>
+  </form>
+</mat-card>
+
+<div class="row">
+  <p>Got questions, or want to explore options?
+    </p>
+    <p>I'm more than happy to get in touch!</p>
+</div>
+

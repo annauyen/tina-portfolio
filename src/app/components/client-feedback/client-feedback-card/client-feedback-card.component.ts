@@ -11,7 +11,5 @@ import {MatCardModule} from '@angular/material/card';
   styleUrl: './client-feedback-card.component.scss'
 })
 export class ClientFeedbackCardComponent {
-  @Input() clientName: string = '';
-  @Input() clientImage: string = '';
-  @Input() feedbackText: string = '';
+
 }
