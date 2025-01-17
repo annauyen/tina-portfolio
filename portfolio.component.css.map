@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/components/portfolio/portfolio.component.scss"],
-  "sourcesContent": [".overlay {\r\n  position: absolute;\r\n  top: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  height: 100%;\r\n  width: 100%;\r\n  opacity: 0;\r\n  transition: 0.5s ease;\r\n  background-color: var(--third);\r\n}\r\n\r\n.hover:hover .overlay {\r\n  opacity: 0.7;\r\n  cursor: pointer;\r\n}\r\n\r\n.hover {\r\n  position: relative;\r\n  // width: 50%;\r\n}\r\n\r\n.text {\r\n  color: var(--text);\r\n  font-size: 20px;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  -webkit-transform: translate(-50%, -50%);\r\n  -ms-transform: translate(-50%, -50%);\r\n  transform: translate(-50%, -50%);\r\n  text-align: center;\r\n}\r\n"],
-  "mappings": ";AAAA,CAAA;AACE,YAAA;AACA,OAAA;AACA,UAAA;AACA,QAAA;AACA,SAAA;AACA,UAAA;AACA,SAAA;AACA,WAAA;AACA,cAAA,KAAA;AACA,oBAAA,IAAA;;AAGF,CAAA,KAAA,OAAA,CAbA;AAcE,WAAA;AACA,UAAA;;AAGF,CALA;AAME,YAAA;;AAIF,CAAA;AACE,SAAA,IAAA;AACA,aAAA;AACA,YAAA;AACA,OAAA;AACA,QAAA;AACA,qBAAA,UAAA,IAAA,EAAA;AACA,iBAAA,UAAA,IAAA,EAAA;AACA,aAAA,UAAA,IAAA,EAAA;AACA,cAAA;;",
-  "names": []
-}
