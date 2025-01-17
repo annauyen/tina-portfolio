@@ -1,5 +1,5 @@
 <h1>Booking</h1>
-<br>
+<br />
 <mat-card>
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <h2>Contact me</h2>
@@ -24,15 +24,30 @@
       ></textarea>
     </mat-form-field>
 
-    <button mat-raised-button color="primary" type="submit" [disabled]="!contactForm.valid">
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      [disabled]="!contactForm.valid"
+    >
       Send
     </button>
   </form>
+  <br />
+  <div class="contact-footer">
+    <table>
+      <tr>
+        <p>Got questions, or want to explore options?</p>
+        <p>I'm more than happy to get in touch!</p>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <th>Phone</th>
+      </tr>
+      <tr>
+        <td>huynhnhtram07&#64;gmail.com</td>
+        <td>+32 491 1842 82</td>
+      </tr>
+    </table>
+  </div>
 </mat-card>
-
-<div class="row">
-  <p>Got questions, or want to explore options?
-    </p>
-    <p>I'm more than happy to get in touch!</p>
-</div>
-
